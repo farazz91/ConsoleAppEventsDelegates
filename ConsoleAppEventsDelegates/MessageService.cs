@@ -8,9 +8,9 @@ namespace ConsoleAppEventsDelegates
 {
     class MessageService
     {
-        public static void onVideoEncoded(object source,EventArgs args)
+        public static void onVideoEncoded(object source,VideoEventArgs vargs)
         {
-            Console.WriteLine("Message service");
+            Console.WriteLine("Message service " + vargs.video.Tittle);
         }
     }
 }
